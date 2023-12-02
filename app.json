@@ -1,1 +1,15 @@
-404: Not Found
+{
+    "name": "dero ",
+    "description": "+-",
+    "keywords": ["shell", "telegram", "docker", "bot"],
+    "repository": "+-",
+    "stack": "container",
+    "env": {
+      "c": {
+        "description": "isi a"
+      },
+      "P": {
+        "description": "isi b"
+      }
+    }
+  }
