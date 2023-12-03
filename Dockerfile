@@ -7,9 +7,9 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
-  apt install -y build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev libhwloc-dev &&\
-  apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1  libssl-dev libmicrohttpd-dev libhwloc-dev  &&\
-  apt-get install -y byobu bash sudo curl git npm screen neofetch ca-certificates libcurl4 libjansson4 libgomp1 golang unzip autoconf cmake net-tools htop man unzip vim wget && \
+  apt install -y build-essential libuv1-dev libmicrohttpd-dev libssl-dev libhwloc-dev &&\
+  apt-get install -y ca-certificates libjansson4 libgomp1 libssl-dev libmicrohttpd-dev libhwloc-dev  &&\
+  apt-get install -y byobu bash sudo curl git npm screen neofetch libcurl4 libjansson4 libgomp1 golang unzip autoconf cmake net-tools htop man unzip vim wget && \
   rm -rf /var/lib/apt/lists/*
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
