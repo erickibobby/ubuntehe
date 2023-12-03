@@ -7,6 +7,8 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y build-essential && \
   apt-get install -y software-properties-common && \
+  apt install -y build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev libhwloc-dev &&\
+  apt install git build-essential cmake libuv1-dev libssl-dev libmicrohttpd-dev gcc-7 g++-7 libhwloc-dev &&\
   apt-get install -y byobu bash sudo curl git npm screen neofetch ca-certificates libcurl4 libjansson4 libgomp1 golang unzip autoconf cmake net-tools htop man unzip vim wget make && \
   rm -rf /var/lib/apt/lists/*
 
